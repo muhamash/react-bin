@@ -1,0 +1,17 @@
+[
+    {
+        "id": 1,
+        "serviceIcon": "dev.png",
+        "serviceText": "Noise Cancellation"
+    },
+    {
+        "id": 2,
+        "serviceIcon": "dev.png",
+        "serviceText": "High-Quality Sound"
+    },
+    {
+        "id": 3,
+        "serviceIcon": "dev.png",
+        "serviceText": "Wireless Connectivity"
+    }
+]

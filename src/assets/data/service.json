@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "web development",
+        "description": " iste laboriosam repudiandae consectetur dolore laborum nobis sed, enim corrupti ducimus ratione eos. Sit  enim corrupti ducimus",
+        "image": "dev.png"
+    },
+    {
+        "id": 2,
+        "name": "graphic design",
+        "description": "consectetur dolore laborum nobis sed, enim corrupti ducimus ratione eos.enim corrupti ducimus enim corrupti ducimus",
+        "image": "design.png"
+    },
+    {
+        "id": 3,
+        "name": "mobile app development",
+        "description": "repudiandae consectetur dolore laborum nobis sed, enim corrupti ducimus ratione ratione eos.  enim corrupti ducimus",
+        "image": "dev.png"
+    },
+    {
+        "id": 90,
+        "name": "digital marketing",
+        "description": "sit amet consectetur adipisicing elit. Odit cum molestiae reprehenderit ratione eos.  enim corrupti ducimus",
+        "image": "noName.png"
+    },
+    {
+        "id": 32,
+        "name": "digital marketing",
+        "description": "sit amet consectetur adipisicing elit. Odit cum molestiae reprehenderit ratione eos.  enim corrupti ducimus",
+        "image": "dev.png"
+    }
+]
