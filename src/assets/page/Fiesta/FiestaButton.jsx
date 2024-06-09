@@ -42,8 +42,7 @@ const FiestaButton = ({
         setDropdownVisible(!dropdownVisible);
       }
     }
-  };
-
+  }
   const bgColor = getTypeColor(type);
   const stateClass = getStateClass(state);
   const additionalClasses = getAdditionalClasses(addClassName);
