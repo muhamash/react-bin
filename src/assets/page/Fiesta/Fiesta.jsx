@@ -1,5 +1,6 @@
 // import React from 'react'
 // import React from 'react';
+import DatePicker from './DatePicker/DatePicker';
 import FiestaButton from './FiestaButton'; // Ensure correct import path
 
 const handleClick = () => {
@@ -81,6 +82,20 @@ export default function Fiesta() {
                     addClassName='w-[251px] h-[40px] text-md text-white'
                     dropdown={ true }
                 />
+            </div>
+            <div>
+                <div style={ {
+                    boxShadow: '0px 12px 36px 0px rgba(44, 48, 64, 0.12)',
+                } }
+                    className=' rounded-[16px] p-5 flex gap-10'>
+                    <div className='bg-green-500 w-[280px]'>
+
+                    </div>
+                    <div>
+                        <h2 className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>When</h2>
+                        <DatePicker/>
+                    </div>
+                </div>
             </div>
         </div>
     );
