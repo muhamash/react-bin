@@ -99,7 +99,7 @@ const DatePicker = () => {
                     </svg>
                 </button>
             </div>
-            <div className="grid grid-cols-7 font-semibold  space-x-[30px] space-y-[20px] text-[10px] md:text-[12px]">
+            <div className="grid grid-cols-7 font-semibold  space-x-[15px] space-y-[10px] text-[10px] md:text-[12px]">
                 <div className="font-bold flex items-end justify-end text-center  text-[#637381]">Su</div>
                 <div className="font-bold text-center text-[#637381]">Mo</div>
                 <div className="font-bold text-center text-[#637381]">Tu</div>
