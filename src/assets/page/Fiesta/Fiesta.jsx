@@ -95,13 +95,12 @@ export default function Fiesta() {
                     </div>
                     <div className=' flex flex-wrap gap-5 '>
                         <div className='w-[280px]'>
-                            <Where/>
+                            <Where />
                         </div>
                         <div className='w-[1px] h-[254px] my-auto  bg-[#DFE3E8]'>
                         
                         </div>
                         <div>
-                            
                             <DatePicker />
                         </div>
                     </div>
