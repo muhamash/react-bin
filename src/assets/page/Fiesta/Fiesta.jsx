@@ -1,6 +1,7 @@
 // import React from 'react'
 // import React from 'react';
 import DatePicker from './DatePicker/DatePicker';
+import { Where } from './DatePicker/Where';
 import FiestaButton from './FiestaButton'; // Ensure correct import path
 
 const handleClick = () => {
@@ -93,14 +94,14 @@ export default function Fiesta() {
                         <div className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>When</div>
                     </div>
                     <div className=' flex flex-wrap gap-5 '>
-                        <div className='bg-green-500 w-[280px]'>
-
+                        <div className='w-[280px]'>
+                            <Where/>
                         </div>
                         <div className='w-[1px] h-[254px] my-auto  bg-[#DFE3E8]'>
                         
                         </div>
                         <div>
-                            {/* <h2 className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>When</h2> */ }
+                            
                             <DatePicker />
                         </div>
                     </div>
