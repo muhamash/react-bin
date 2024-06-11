@@ -46,14 +46,15 @@ const FiestaButton = ({
   const bgColor = getTypeColor(type);
   const stateClass = getStateClass(state);
   const additionalClasses = getAdditionalClasses(addClassName);
-  const filter = type !== 'clear' ? `drop-shadow(0px 3px 10px  ${bgColor})` : 'none';
+  // const filter = type !== 'clear' ? `drop-shadow(0px 3px 10px  ${bgColor})` : 'none';
+  const boxShadow = type !== 'clear' ? `1px 4px 14px 0px ${bgColor}`: 'none';
 
   const buttonClass = `rounded-md  text-center ${stateClass} ${additionalClasses}`;
 
     return (
         <div className="relative inline-block">
             <button
-                style={ { backgroundColor: bgColor, filter } }
+                style={ { backgroundColor: bgColor, boxShadow } }
                 className={ buttonClass }
                 onClick={ handleButtonClick }
                 { ...props }

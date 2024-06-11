@@ -1,6 +1,7 @@
 // import React from 'react'
 // import React from 'react';
 import DatePicker from './DatePicker/DatePicker';
+import { Where } from './DatePicker/Where';
 import FiestaButton from './FiestaButton'; // Ensure correct import path
 
 const handleClick = () => {
@@ -87,13 +88,30 @@ export default function Fiesta() {
                 <div style={ {
                     boxShadow: '0px 12px 36px 0px rgba(44, 48, 64, 0.12)',
                 } }
-                    className=' rounded-[16px] p-5 flex gap-10'>
-                    <div className='bg-green-500 w-[280px]'>
-
+                    className=' rounded-[16px] p-5  flex-wrap gap-[18px] max-w-[650px] flex flex-col'>
+                    <div className='flex justify-around items-center'>
+                        <div className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>Where</div>
+                        <div className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>When</div>
                     </div>
-                    <div>
-                        <h2 className='text-center font-bold text-[14px] uppercase md:text-[16px] text-[#000000]'>When</h2>
-                        <DatePicker/>
+                    <div className=' flex flex-wrap gap-5 '>
+                        <div className='w-[280px]'>
+                            <Where />
+                        </div>
+                        <div className='w-[1px] h-[254px] my-auto  bg-[#DFE3E8]'>
+                        
+                        </div>
+                        <div>
+                            <DatePicker />
+                        </div>
+                    </div>
+                    <div className='w-full'>
+                        <FiestaButton
+                            text="See result"
+                            type="cart"
+                            state="normal"
+                            onClick={ handleClick }
+                            addClassName='w-[600px] h-[40px] text-md text-white'
+                            dropdown={ true } />
                     </div>
                 </div>
             </div>
