@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import "@maptiler/geocoding-control/style.css";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { useEffect, useRef, useState } from "react";
 
-export function Where() {
+export function Where({onChange}) {
   const apiKey = "YIfKfxlEousH33MgOlCt";
   const mapContainerRef = useRef(null);
   const [map, setMap] = useState(null);
@@ -45,13 +46,15 @@ export function Where() {
     };
   }, [map]);
 
-  const fetchLocationDetails = async (lngLat) => {
+  const fetchLocationDetails = async ( lngLat ) =>
+  {
     const response = await fetch(
       `https://api.maptiler.com/geocoding/${lngLat.lng},${lngLat.lat}.json?key=${apiKey}`
     );
     const data = await response.json();
-    const city = data.features.length > 0 ? data.features[0].place_name : 'Unknown location';
-    setLocation({ city, coords: [lngLat.lng, lngLat.lat] });
+    const city = data.features.length > 0 ? data.features[ 0 ].place_name : 'Unknown location';
+    setLocation( { city, coords: [ lngLat.lng, lngLat.lat ] } );
+    onChange( { city, coords: [ lngLat.lng, lngLat.lat ] });
   };
 
   console.log(location)
