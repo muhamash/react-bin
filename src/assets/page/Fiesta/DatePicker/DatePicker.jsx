@@ -1,7 +1,8 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable react-hooks/exhaustive-deps */
 import { useMemo, useState } from 'react';
 
-const DatePicker = () => {
+const DatePicker = ({onChange}) => {
     const [selectedDate, setSelectedDate] = useState(null);
     const [ currentDate, setCurrentDate ] = useState( new Date() );
     
@@ -23,8 +24,11 @@ const DatePicker = () => {
         });
     };
 
-    const handleDateClick = (date) => {
-        setSelectedDate(new Date(currentDate.getFullYear(), currentDate.getMonth(), date));
+    const handleDateClick = ( date ) =>
+    {
+        const selectedDate = new Date( currentDate.getFullYear(), currentDate.getMonth(), date );
+        setSelectedDate( selectedDate );
+        onChange(selectedDate)
     };
 
     const renderDays = useMemo( () =>
