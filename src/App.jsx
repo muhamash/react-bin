@@ -1,6 +1,7 @@
 // import React from 'react'
 import { Link } from 'react-router-dom';
 import './App.css';
+import DesignLadderButton from './assets/page/Portfolio/DesignLadderButton';
 
 export default function App() {
     return (
@@ -13,6 +14,12 @@ export default function App() {
             <Link to={'/fiesta'}>
                 <button className="bg-slate-600 text-white p-3 rounded-md">
                     Fiesta Row
+                </button>
+            </Link>
+            <Link to={'/designladder'}>
+                <button className="bg-slate-600 text-white p-3 rounded-md">
+                    DesignLadder
+                    
                 </button>
             </Link>
         </div>
