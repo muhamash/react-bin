@@ -48,10 +48,10 @@ export default function DesignLadder() {
                             </svg>
                         </button>
                     </div>
-                    <div className={`flex-col md:flex-row md:flex items-center md:gap-[40px] sm:gap-[20px] ${isMobileMenuOpen ? 'absolute right-0 top-[80px] bg-black/20 rounded-xl backdrop-blur-md p-5 text-sm text-center' : 'hidden'} gap-[10px] `}>
-                        <ul className={`flex-col md:flex-row md:flex gap-[10px] md:gap-5`}>
+                    <div className={`flex-col md:flex-row md:flex items-center md:gap-[40px] sm:gap-[20px] ${isMobileMenuOpen ? 'absolute right-2 top-[80px] bg-black/20 rounded-xl backdrop-blur-md p-5 text-sm text-left' : 'hidden'} gap-[10px] `}>
+                        <ul className={`flex-col md:flex-row md:flex gap-5`}>
                             {navData && navData.map((nav) => (
-                                <li className="cursor-pointer" onClick={()=> console.log(nav)} key={nav.id}>{nav.title}</li>
+                                <li className="pb-2" onClick={()=> console.log(nav)} key={nav.id}>{nav.title}</li>
                             ))} 
                         </ul>
                         <DesignLadderButton
