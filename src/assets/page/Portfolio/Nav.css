@@ -1,0 +1,13 @@
+/* You can add these styles to your CSS file */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    nav ul.hidden {
+        display: none;
+    }
+    nav ul.flex {
+        display: flex;
+    }
+}
