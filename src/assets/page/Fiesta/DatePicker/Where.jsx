@@ -1,3 +1,4 @@
+
 /* eslint-disable react/prop-types */
 import "@maptiler/geocoding-control/style.css";
 import maplibregl from "maplibre-gl";
@@ -52,6 +53,7 @@ export function Where({onChange}) {
       `https://api.maptiler.com/geocoding/${lngLat.lng},${lngLat.lat}.json?key=${apiKey}`
     );
     const data = await response.json();
+    
     const city = data.features.length > 0 ? data.features[ 0 ].place_name : 'Unknown location';
     setLocation( { city, coords: [ lngLat.lng, lngLat.lat ] } );
     onChange( { city, coords: [ lngLat.lng, lngLat.lat ] });
